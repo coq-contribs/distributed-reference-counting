@@ -20,7 +20,7 @@
    general Lemma in terms of reduce *)
 
 Require Export reduce.
-Require Export distributed_ref_counting.machine3.cardinal.
+Require Export DistributedReferenceCounting.machine3.cardinal.
 Require Export sigma2.
 Require Export sum.
 

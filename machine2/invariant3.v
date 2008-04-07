@@ -14,9 +14,9 @@
 (* 02110-1301 USA                                                     *)
 
 Require Import List.
-Require Export distributed_ref_counting.machine2.invariant0.
-Require Export distributed_ref_counting.machine2.invariant1.
-Require Export distributed_ref_counting.machine2.invariant2.
+Require Export DistributedReferenceCounting.machine2.invariant0.
+Require Export DistributedReferenceCounting.machine2.invariant1.
+Require Export DistributedReferenceCounting.machine2.invariant2.
 
 (* Where properties of rooted_fun are derived --> this
    should obviously be abstracted and given decent names *)

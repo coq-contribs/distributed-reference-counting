@@ -14,7 +14,7 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine2.invariant6.
+Require Export DistributedReferenceCounting.machine2.invariant6.
 
 (* Minute changes
    - in 1, deleted n0

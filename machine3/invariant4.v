@@ -14,10 +14,10 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine3.invariant0.
-Require Export distributed_ref_counting.machine3.invariant1.
-Require Export distributed_ref_counting.machine3.invariant2.
-Require Export distributed_ref_counting.machine3.invariant3.
+Require Export DistributedReferenceCounting.machine3.invariant0.
+Require Export DistributedReferenceCounting.machine3.invariant1.
+Require Export DistributedReferenceCounting.machine3.invariant2.
+Require Export DistributedReferenceCounting.machine3.invariant3.
 
 
 (* Where send_table on the owner is defined in terms of the other components *)

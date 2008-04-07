@@ -14,7 +14,7 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine1.invariant6.
+Require Export DistributedReferenceCounting.machine1.invariant6.
 
 
 Lemma parent_invariant_inductive :

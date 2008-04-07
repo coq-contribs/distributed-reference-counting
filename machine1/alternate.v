@@ -13,9 +13,9 @@
 (* Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA *)
 (* 02110-1301 USA                                                     *)
 
-Require Export distributed_ref_counting.machine1.machine.
-Require Export distributed_ref_counting.machine1.cardinal.
-Require Export distributed_ref_counting.machine1.comm.
+Require Export DistributedReferenceCounting.machine1.machine.
+Require Export DistributedReferenceCounting.machine1.cardinal.
+Require Export DistributedReferenceCounting.machine1.comm.
 
 Section ALTERNATE.
 

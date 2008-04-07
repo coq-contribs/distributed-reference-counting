@@ -14,8 +14,8 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine4.invariant5.
-Require Export distributed_ref_counting.machine4.invariant7.
+Require Export DistributedReferenceCounting.machine4.invariant5.
+Require Export DistributedReferenceCounting.machine4.invariant7.
 
 (* changes:
    In safety1 and safety2, I had to use 

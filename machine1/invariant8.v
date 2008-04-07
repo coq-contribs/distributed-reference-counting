@@ -14,8 +14,8 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine1.invariant5.
-Require Export distributed_ref_counting.machine1.invariant7.
+Require Export DistributedReferenceCounting.machine1.invariant5.
+Require Export DistributedReferenceCounting.machine1.invariant7.
 
 
 Lemma direct_son_is_positive :

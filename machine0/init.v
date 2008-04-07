@@ -17,7 +17,7 @@
 
 (* description de la situation initiale *)
 
-Require Export distributed_ref_counting.machine0.machine.
+Require Export DistributedReferenceCounting.machine0.machine.
 Require Export counting.
 
 Section INITIALIZATION.

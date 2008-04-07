@@ -15,7 +15,7 @@
 
 
 Require Import List.
-Require Import distributed_ref_counting.machine2.invariant8.
+Require Import DistributedReferenceCounting.machine2.invariant8.
 
 (** 
 

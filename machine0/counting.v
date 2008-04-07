@@ -17,7 +17,7 @@
 (* COUNTING *)
 
 (* decomptes des parametres de la machine*)
-Require Export distributed_ref_counting.machine0.machine.
+Require Export DistributedReferenceCounting.machine0.machine.
 
 Section CONTROL.
 

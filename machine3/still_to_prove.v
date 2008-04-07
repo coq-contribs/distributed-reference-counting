@@ -15,9 +15,9 @@
 
 
 
-Require Export distributed_ref_counting.machine3.machine.
-Require Export distributed_ref_counting.machine3.cardinal.
-Require Export distributed_ref_counting.machine3.comm.
+Require Export DistributedReferenceCounting.machine3.machine.
+Require Export DistributedReferenceCounting.machine3.cardinal.
+Require Export DistributedReferenceCounting.machine3.comm.
 
 Axiom
   todo1 :

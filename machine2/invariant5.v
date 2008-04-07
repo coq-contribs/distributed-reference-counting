@@ -13,12 +13,12 @@
 (* Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA *)
 (* 02110-1301 USA                                                     *)
 
-Require Export distributed_ref_counting.machine2.alternate.
-Require Export distributed_ref_counting.machine2.invariant0.
-Require Export distributed_ref_counting.machine2.invariant1.
-Require Export distributed_ref_counting.machine2.invariant2.
-Require Export distributed_ref_counting.machine2.invariant3.
-Require Export distributed_ref_counting.machine2.invariant4.
+Require Export DistributedReferenceCounting.machine2.alternate.
+Require Export DistributedReferenceCounting.machine2.invariant0.
+Require Export DistributedReferenceCounting.machine2.invariant1.
+Require Export DistributedReferenceCounting.machine2.invariant2.
+Require Export DistributedReferenceCounting.machine2.invariant3.
+Require Export DistributedReferenceCounting.machine2.invariant4.
 
 (* Changes
    - proof of  1  for false_rt_D_queue.

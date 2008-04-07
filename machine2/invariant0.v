@@ -14,9 +14,9 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine2.machine.
-Require Export distributed_ref_counting.machine2.cardinal.
-Require Export distributed_ref_counting.machine2.comm.
+Require Export DistributedReferenceCounting.machine2.machine.
+Require Export DistributedReferenceCounting.machine2.cardinal.
+Require Export DistributedReferenceCounting.machine2.comm.
 
 (* major differences are
 

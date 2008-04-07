@@ -18,7 +18,7 @@
 dependent *)
 
 Require Export reduce.
-Require Export distributed_ref_counting.machine2.machine.
+Require Export DistributedReferenceCounting.machine2.machine.
 
 
 Section COUNT_MESSAGE.

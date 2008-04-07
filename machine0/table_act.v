@@ -18,7 +18,7 @@
 (*definit les actions elementaires sur les tables et leurs
 consequences*)
 
-Require Export distributed_ref_counting.machine0.machine.
+Require Export DistributedReferenceCounting.machine0.machine.
 
 Section T_ACTION.
 

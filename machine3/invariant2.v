@@ -14,10 +14,10 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine3.machine.
-Require Export distributed_ref_counting.machine3.cardinal.
-Require Export distributed_ref_counting.machine3.comm.
-Require Export distributed_ref_counting.machine3.still_to_prove.
+Require Export DistributedReferenceCounting.machine3.machine.
+Require Export DistributedReferenceCounting.machine3.cardinal.
+Require Export DistributedReferenceCounting.machine3.comm.
+Require Export DistributedReferenceCounting.machine3.still_to_prove.
 
 
 Section ROOTED.

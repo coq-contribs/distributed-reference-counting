@@ -14,12 +14,12 @@
 (* 02110-1301 USA                                                     *)
 
 
-Require Export distributed_ref_counting.machine4.alternate.
-Require Export distributed_ref_counting.machine4.invariant0.
-Require Export distributed_ref_counting.machine4.invariant1.
-Require Export distributed_ref_counting.machine4.invariant2.
-Require Export distributed_ref_counting.machine4.invariant3.
-Require Export distributed_ref_counting.machine4.invariant4.
+Require Export DistributedReferenceCounting.machine4.alternate.
+Require Export DistributedReferenceCounting.machine4.invariant0.
+Require Export DistributedReferenceCounting.machine4.invariant1.
+Require Export DistributedReferenceCounting.machine4.invariant2.
+Require Export DistributedReferenceCounting.machine4.invariant3.
+Require Export DistributedReferenceCounting.machine4.invariant4.
 
 (* Changes
    - proof of  1  for false_rt_D_queue.
