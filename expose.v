@@ -125,16 +125,7 @@ Proof.
   
   auto.
   
-  simpl in |- *.
-  simple destruct p.
-  intuition.
-  
-  simpl in |- *.
-  intro.
-  rewrite BinInt.Zneg_xO.
-  omega.
-  
-  auto.
+  discriminate.
 Qed.
 
 
