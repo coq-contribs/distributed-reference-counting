@@ -22,6 +22,8 @@ Require Export Arith.
 Require Export Omega.
 Require Import List.
 
+Global Set Asymmetric Patterns.
+
 Section SEPAR.
 
 (* lorsque l'egalite est decidable sur un ensemble *)
