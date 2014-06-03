@@ -20,6 +20,8 @@ consequences*)
 
 Require Export counting.
 
+Unset Standard Proposition Elimination Names.
+
 Section M_ACTION.
 
 (* ajout et retrait d'un message dans une file d'attente *)

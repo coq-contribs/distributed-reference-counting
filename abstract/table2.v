@@ -18,6 +18,8 @@
 
 Require Export table.
 
+Unset Standard Proposition Elimination Names.
+
 Section TABLE2.
 
 Variable E F G : Set.

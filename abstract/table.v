@@ -20,6 +20,8 @@ table *)
 Require Import List.
 Require Export finite.
 
+Unset Standard Proposition Elimination Names.
+
 Section TABLE1.
 
 (* une table a lements dans F indexee par E est une fonction de E dans

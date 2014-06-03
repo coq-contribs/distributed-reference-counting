@@ -20,6 +20,8 @@ Require Export DistributedReferenceCounting.machine2.invariant2.
 Require Export DistributedReferenceCounting.machine2.invariant3.
 Require Export DistributedReferenceCounting.machine2.invariant4.
 
+Unset Standard Proposition Elimination Names.
+
 (* Changes
    - proof of  1  for false_rt_D_queue.
    - proof of  1  for  legal_alternate.

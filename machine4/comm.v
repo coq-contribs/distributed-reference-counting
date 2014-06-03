@@ -24,6 +24,8 @@ Require Export DistributedReferenceCounting.machine4.cardinal.
 Require Export sigma2.
 Require Export sum.
 
+Unset Standard Proposition Elimination Names.
+
 Section CARDINAL_EFFECT.
 
 (* This section is really using the inductive type Message *)

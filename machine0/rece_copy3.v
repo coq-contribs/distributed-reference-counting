@@ -21,6 +21,8 @@ Require Export init.
 Require Export table_act.
 Require Export mess_act.
 
+Unset Standard Proposition Elimination Names.
+
 Section DEF_REC_COP3.
 
 Definition rec_copy3_trans (c : Config) (s1 s2 : Site) :=

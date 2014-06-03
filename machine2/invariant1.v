@@ -17,6 +17,8 @@ Require Export DistributedReferenceCounting.machine2.machine.
 Require Export DistributedReferenceCounting.machine2.cardinal.
 Require Export DistributedReferenceCounting.machine2.comm.
 
+Unset Standard Proposition Elimination Names.
+
 (* Changes with machine1:
    - As receive table owner equals 1, initally,
      I should add -1

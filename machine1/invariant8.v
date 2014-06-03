@@ -17,6 +17,7 @@
 Require Export DistributedReferenceCounting.machine1.invariant5.
 Require Export DistributedReferenceCounting.machine1.invariant7.
 
+Unset Standard Proposition Elimination Names.
 
 Lemma direct_son_is_positive :
  forall c : Config,

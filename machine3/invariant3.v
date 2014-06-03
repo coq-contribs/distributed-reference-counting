@@ -19,6 +19,8 @@ Require Export DistributedReferenceCounting.machine3.invariant0.
 Require Export DistributedReferenceCounting.machine3.invariant1.
 Require Export DistributedReferenceCounting.machine3.invariant2.
 
+Unset Standard Proposition Elimination Names.
+
 (* Where properties of rooted_fun are derived --> this
    should obviously be abstracted and given decent names *)
 

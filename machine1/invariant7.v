@@ -16,6 +16,7 @@
 
 Require Export DistributedReferenceCounting.machine1.invariant6.
 
+Unset Standard Proposition Elimination Names.
 
 Lemma parent_invariant_inductive :
  forall (c : Config) (t : class_trans c),

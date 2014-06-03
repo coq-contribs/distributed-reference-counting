@@ -22,6 +22,8 @@ Require Import List.
 Require Export fifo.
 Require Export table.
 
+Unset Standard Proposition Elimination Names.
+
 Section MACHINE.
 
 (* l'ensemble des sites avec un privilegie l'owner *)

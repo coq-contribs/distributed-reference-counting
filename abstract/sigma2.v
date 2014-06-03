@@ -22,6 +22,8 @@ Require Export fifo.
 Require Export table. 
 Require Export reduce. 
 
+Unset Standard Proposition Elimination Names.
+
 Section TABLE.
 
 Variable Site : Set. 

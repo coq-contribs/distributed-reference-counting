@@ -21,6 +21,8 @@
 Require Import List.
 Require Export bibli.
 
+Unset Standard Proposition Elimination Names.
+
 Section DEFIN.
 
 (* un ensemble fini est un ensemble tel qu'il existe une liste

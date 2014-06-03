@@ -17,6 +17,8 @@
 Require Import List.
 Require Import DistributedReferenceCounting.machine2.invariant8.
 
+Unset Standard Proposition Elimination Names.
+
 (** 
 
 Here, we study liveness of the algorithm.

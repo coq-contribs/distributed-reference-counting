@@ -24,6 +24,7 @@
 
 Require Export abstract_machine.
 
+Unset Standard Proposition Elimination Names.
 
 (**********************************************************************
 

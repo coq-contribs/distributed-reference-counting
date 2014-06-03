@@ -14,7 +14,7 @@
 (* 02110-1301 USA                                                     *)
 
 Set Asymmetric Patterns.
-
+Unset Standard Proposition Elimination Names.
 
 Require Export ZArith.
 Require Export Omega.

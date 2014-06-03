@@ -20,6 +20,8 @@
 
 Require Export bibli.
 
+Unset Standard Proposition Elimination Names.
+
 Section DEF_FIFO.
 
 (* definition d'une file d'attente comme d'une liste avec un acces a

@@ -20,6 +20,8 @@ Require Export DistributedReferenceCounting.machine4.invariant2.
 Require Export DistributedReferenceCounting.machine4.invariant3.
 Require Export DistributedReferenceCounting.machine4.invariant4.
 
+Unset Standard Proposition Elimination Names.
+
 (* changes:
    only a few changes in ancestor_not_reflexive for
    transition  6 ,  where n0->n1, n1-> n2, n2-> n3.

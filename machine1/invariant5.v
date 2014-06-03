@@ -21,6 +21,7 @@ Require Export DistributedReferenceCounting.machine1.invariant2.
 Require Export DistributedReferenceCounting.machine1.invariant3.
 Require Export DistributedReferenceCounting.machine1.invariant4.
 
+Unset Standard Proposition Elimination Names.
 
 Section INVARIANT5.
 

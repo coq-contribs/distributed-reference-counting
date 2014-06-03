@@ -17,6 +17,8 @@
 Require Export Bool. 
 Require Export fifo. 
 
+Unset Standard Proposition Elimination Names.
+
 Section REDUCE.
 
 Variable E : Set.

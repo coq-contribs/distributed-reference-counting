@@ -24,6 +24,8 @@ Require Export table.
 Require Export reduce. 
 Require Export sigma2. 
 
+Unset Standard Proposition Elimination Names.
+
 Section MACHINE.
 
 Parameter Site : Set. 

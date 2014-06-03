@@ -17,6 +17,8 @@
 Require Export DistributedReferenceCounting.machine4.invariant5.
 Require Export DistributedReferenceCounting.machine4.invariant7.
 
+Unset Standard Proposition Elimination Names.
+
 (* changes:
    In safety1 and safety2, I had to use 
    sigma_but_strictly_positive, instead of sigma_strictly_positive.

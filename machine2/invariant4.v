@@ -19,6 +19,7 @@ Require Export DistributedReferenceCounting.machine2.invariant1.
 Require Export DistributedReferenceCounting.machine2.invariant2.
 Require Export DistributedReferenceCounting.machine2.invariant3.
 
+Unset Standard Proposition Elimination Names.
 
 (* Where send_table on the owner is defined in terms of the other components *)
 

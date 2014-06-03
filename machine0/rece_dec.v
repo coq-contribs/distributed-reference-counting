@@ -22,6 +22,8 @@ Require Export init.
 Require Export table_act.
 Require Export mess_act.
 
+Unset Standard Proposition Elimination Names.
+
 Section DEF_REC_DEC.
 
 Definition rec_dec_trans (c : Config) (s1 s2 : Site) :=

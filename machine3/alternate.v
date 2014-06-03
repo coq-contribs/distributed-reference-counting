@@ -18,6 +18,8 @@ Require Export DistributedReferenceCounting.machine3.machine.
 Require Export DistributedReferenceCounting.machine3.cardinal.
 Require Export DistributedReferenceCounting.machine3.comm.
 
+Unset Standard Proposition Elimination Names.
+
 Section ALTERNATE.
 
 

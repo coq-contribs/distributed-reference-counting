@@ -16,6 +16,8 @@
 
 Require Export DistributedReferenceCounting.machine4.invariant6.
 
+Unset Standard Proposition Elimination Names.
+
 (* Minute changes
    - in 1, deleted n0
    - in 6, added n0 in initial Intros

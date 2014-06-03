@@ -18,6 +18,8 @@ Require Export DistributedReferenceCounting.machine2.machine.
 Require Export DistributedReferenceCounting.machine2.cardinal.
 Require Export DistributedReferenceCounting.machine2.comm.
 
+Unset Standard Proposition Elimination Names.
+
 (* major differences are
 
 - no_copy_to_owner is no longer true!

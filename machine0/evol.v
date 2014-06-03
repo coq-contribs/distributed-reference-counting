@@ -26,6 +26,8 @@ Require Export rece_copy3.
 Require Export rece_dec.
 Require Export rece_inc.
 
+Unset Standard Proposition Elimination Names.
+
 Section EVOLUTION.
 	
 (* ou l'on trouvera successivement la definition des transitions avec
