@@ -771,7 +771,7 @@ Proof.
   simple induction t; simpl in |- *; intros; auto.
   unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro; generalize e.
-  rewrite H2; rewrite H1; auto with v62.
+  rewrite H2; rewrite H1; auto with bool.
   
   unfold Set_rec_table in |- *; rewrite other_site; auto.
   
