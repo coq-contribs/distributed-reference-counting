@@ -170,10 +170,10 @@ Hypothesis strict : forall x y : E, R x y -> f x < f y.
 Lemma lt_acc : forall (n : nat) (y : E), f y < n -> Acc R y.
 Proof.
  simple induction n.
- intros; absurd (f y < 0); auto with v62.
+ intros; absurd (f y < 0); auto with arith.
  intros; apply Acc_intro.
  intros; apply H.
- apply lt_le_trans with (m := f y); auto with v62.
+ apply lt_le_trans with (m := f y); auto with arith.
 Qed.
 
 Lemma wf_R : well_founded R.

@@ -305,7 +305,7 @@ Proof.
   unfold not in |- *.
   intro.
   generalize H3; simpl in |- *.
-  rewrite <- H5; rewrite a; auto with v62.
+  rewrite <- H5; rewrite a; auto with bool.
   
   left; auto.
   
@@ -888,7 +888,7 @@ Proof.
   unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro.
   generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   rewrite collect_elsewhere; auto.
@@ -901,7 +901,7 @@ Proof.
   simpl in |- *.
   unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro.
-  generalize e; rewrite H8; rewrite H6; auto with v62.
+  generalize e; rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   case (eq_queue_dec owner s4 s2 owner).
@@ -1013,7 +1013,7 @@ Proof.
   elim H3.
   intros.
   unfold not in |- *; intro.
-  generalize e; rewrite H8; rewrite H6; auto with v62.
+  generalize e; rewrite H8; rewrite H6; auto with bool.
   
   apply long with (s1 := x).
   elim H4.
@@ -1025,7 +1025,7 @@ Proof.
   simpl in |- *.
   simpl in |- *; unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro.
-  generalize e; rewrite H8; rewrite H6; auto with v62.
+  generalize e; rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   rewrite collect_elsewhere; auto.
@@ -1043,7 +1043,7 @@ Proof.
   intros; apply parent_intro.
   simpl in |- *; unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro; generalize e.
-  rewrite H10; rewrite H8; auto with v62.
+  rewrite H10; rewrite H8; auto with bool.
   
   simpl in |- *; rewrite collect_elsewhere; auto.
   right; unfold not in |- *; intro; generalize e0.
@@ -1118,7 +1118,7 @@ Proof.
   
   simpl in |- *; unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro; generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   rewrite collect_elsewhere; auto.
@@ -1143,13 +1143,13 @@ Proof.
   generalize e; elim H5; intros.
   generalize e1; elim H8; intros.
   unfold not in |- *; intro.
-  generalize e2; rewrite H11; rewrite H9; auto with v62.
+  generalize e2; rewrite H11; rewrite H9; auto with bool.
   
   generalize e1; elim H10.
   intros.
   unfold not in |- *.
   intro; generalize e2.
-  rewrite H13; rewrite H11; auto with v62.
+  rewrite H13; rewrite H11; auto with bool.
   
   generalize n0; elim H7; intros.
   apply parent_intro.
@@ -1263,7 +1263,7 @@ Proof.
   
   simpl in |- *; unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro; generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   rewrite post_elsewhere.
@@ -1281,7 +1281,7 @@ Proof.
   intro; rewrite collect_elsewhere; auto.
   
   left; unfold not in |- *; intro; generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   apply long with (s1 := s1).
   generalize H4.
@@ -1298,7 +1298,7 @@ Proof.
   elim b0.
   intros.
   unfold not in |- *; intro; generalize e.
-  rewrite <- H10; rewrite H8; auto with v62.
+  rewrite <- H10; rewrite H8; auto with bool.
   
   intros.
   generalize H6.
@@ -1326,12 +1326,12 @@ Proof.
   elim H11.
   intros.
   unfold not in |- *; intro; generalize H12.
-  rewrite H14; rewrite e; auto with v62.
+  rewrite H14; rewrite e; auto with bool.
   
   intros.
   elim H13; intros.
   unfold not in |- *; intro; generalize H14.
-  rewrite H16; rewrite e; auto with v62.
+  rewrite H16; rewrite e; auto with bool.
   
   generalize H10.
   elim H9.
@@ -1403,7 +1403,7 @@ Proof.
   
   simpl in |- *; unfold Set_rec_table in |- *; rewrite other_site; auto.
   unfold not in |- *; intro; generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   simpl in |- *.
   rewrite post_elsewhere.
@@ -1417,7 +1417,7 @@ Proof.
   
   left.
   unfold not in |- *; intro; generalize e.
-  rewrite H8; rewrite H6; auto with v62.
+  rewrite H8; rewrite H6; auto with bool.
   
   generalize n1.
   elim H4.
@@ -1444,11 +1444,11 @@ Proof.
   elim H5; intros.
   elim H8; intros.
   unfold not in |- *; intro; generalize e.
-  rewrite H11; rewrite H9; auto with v62.
+  rewrite H11; rewrite H9; auto with bool.
   
   elim H10; intros.
   unfold not in |- *; intro; generalize e.
-  rewrite H13; rewrite H11; auto with v62.
+  rewrite H13; rewrite H11; auto with bool.
   
   generalize n2; elim H7.
   intros.
@@ -1536,7 +1536,7 @@ Proof.
   unfold not in |- *; intro.
   rewrite H13 in H11.
   generalize H11; unfold Reset_rec_table in |- *; rewrite that_site;
-   auto with v62.
+   auto with bool.
   
   intros.
   apply long with (s1 := s1).
@@ -1618,7 +1618,7 @@ Proof.
   intros.
   unfold not in |- *; intro.
   generalize H13; rewrite H15; simpl in |- *; unfold Reset_rec_table in |- *;
-   rewrite that_site; auto with v62.
+   rewrite that_site; auto with bool.
   
   generalize H1; elim H1; intros.
   apply indirect_son1_intro.
@@ -1629,7 +1629,7 @@ Proof.
   elim H5; intros.
   unfold not in |- *; intro; generalize H7.
   rewrite H9; simpl in |- *; unfold Reset_rec_table in |- *;
-   rewrite that_site; auto with v62.
+   rewrite that_site; auto with bool.
   
   generalize H4; simpl in |- *.
   intro.

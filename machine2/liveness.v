@@ -170,7 +170,7 @@ Proof.
   
   unfold not in |- *; intro; generalize a.
   rewrite H4; rewrite owner_rt_true.
-  auto with v62.
+  auto with bool.
   
   auto.
   
