@@ -144,7 +144,7 @@ Lemma ge_sigma_sigma :
  forall (l : list E) (f g : E -> Z),
  (forall x : E, (f x >= g x)%Z) -> (sigma l f >= sigma l g)%Z.
 Proof.
- intros; apply Zle_ge; apply le_sigma_sigma; intros; apply Zge_le; trivial.
+ intros; apply Z.le_ge; apply le_sigma_sigma; intros; apply Z.ge_le; trivial.
 Qed.
 
 Hypothesis eq_E_dec : eq_dec E.

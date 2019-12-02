@@ -1864,11 +1864,11 @@ Inductive legal_as_set : Config -> Set :=
 
 
 
-Definition legal_config := sigS legal_as_set.
+Definition legal_config := sigT legal_as_set.
 
-Definition get_c (lc : sigS legal_as_set) :=
+Definition get_c (lc : sigT legal_as_set) :=
   match lc with
-  | existS c L => c
+  | existT c L => c
   end.
 
 (* WATCH OUT: successor is first argument, predecessor is second *)
@@ -1887,7 +1887,7 @@ Definition convert_to_nat (n : Z) :=
 
 Definition no_copy_measure (lc : legal_config) :=
   match lc with
-  | existS c _ => convert_to_nat (termination_measure c)
+  | existT c _ => convert_to_nat (termination_measure c)
   end.
 
 Definition decidable_relation (E : Set) (R : E -> E -> Prop) :=
@@ -1920,7 +1920,7 @@ Proof.
   decompose [and] H1.
   split
    with
-     (existS legal_as_set (transition c x1) (intro_leg (transition c x1) H3)).
+     (existT legal_as_set (transition c x1) (intro_leg (transition c x1) H3)).
   unfold no_copy_succ in |- *.
   unfold get_c in |- *.
   split with x1.
@@ -1946,8 +1946,8 @@ Lemma Z_nat_business :
  forall x y : positive, nat_of_P y < nat_of_P x -> (Zpos y < Zpos x)%Z.
 Proof.
   intros.
-  unfold Zlt in |- *.
-  unfold Zcompare in |- *.
+  unfold Z.lt in |- *.
+  unfold Z.compare in |- *.
   apply nat_of_P_lt_Lt_compare_complement_morphism.
   auto.
 Qed.
@@ -1958,8 +1958,8 @@ Proof.
   intros.
   apply nat_of_P_lt_Lt_compare_morphism.
   generalize H.
-  unfold Zlt in |- *.
-  unfold Zcompare in |- *.
+  unfold Z.lt in |- *.
+  unfold Z.compare in |- *.
   auto.
 Qed.
 
@@ -2065,7 +2065,7 @@ Proof.
   decompose [and] H9.
   elim
    (H0
-      (existS legal_as_set (transition c x3)
+      (existT legal_as_set (transition c x3)
          (intro_leg (transition c x3) H10))).
   unfold no_copy_succ in |- *.
   unfold get_c in |- *.

@@ -629,12 +629,12 @@ Qed.
 
 Lemma lt_sigma_xi_yi : (sigma_xi c0 > sigma_yi c0)%Z.
 Proof.
- apply Zlt_gt; unfold sigma_xi, sigma_yi in |- *; apply lt_sigma_sigma.
+ apply Z.lt_gt; unfold sigma_xi, sigma_yi in |- *; apply lt_sigma_sigma.
 
- intro; apply Zge_le; apply le_xi_yi; trivial.
+ intro; apply Z.ge_le; apply le_xi_yi; trivial.
 
  exists (root_parent s0); split.
- apply Zgt_lt; apply lt_root_xi_yi.
+ apply Z.gt_lt; apply lt_root_xi_yi.
 
  apply in_s_LS.
 Qed.

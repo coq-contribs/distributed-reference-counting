@@ -50,7 +50,7 @@ Section TRANSITIONS.
 
 Definition decrement_trans (c : Config) := mkconfig (co c - 1)%Z.
 
-Definition divide_trans (c : Config) := mkconfig (Zeven.Zdiv2 (co c)).
+Definition divide_trans (c : Config) := mkconfig (Z.div2 (co c)).
 
 
 Inductive transition (c : Config) : Set :=
@@ -78,7 +78,7 @@ End TRANSITIONS.
 (* positive *)
 
 Lemma Zdiv2_positive :
- forall x : Z, Zeven.Zeven x -> (x >= 0)%Z -> (Zeven.Zdiv2 x >= 0)%Z.
+ forall x : Z, Zeven.Zeven x -> (x >= 0)%Z -> (Z.div2 x >= 0)%Z.
 Proof.
   simple destruct x.
   simpl in |- *.
@@ -105,7 +105,7 @@ Proof.
 Qed.
 
 Lemma x_gt_Zdiv2 :
- forall x : Z, Zeven.Zeven x -> (x > 0)%Z -> (x > Zeven.Zdiv2 x)%Z.
+ forall x : Z, Zeven.Zeven x -> (x > 0)%Z -> (x > Z.div2 x)%Z.
 Proof.
   simple destruct x.
   simpl in |- *.
@@ -238,7 +238,7 @@ Qed.
 Lemma rec2_princ :
  forall P : Z -> Prop,
  P 0%Z ->
- (forall x : Z, Zeven.Zeven x -> (x > 0)%Z -> P (Zeven.Zdiv2 x) -> P x) ->
+ (forall x : Z, Zeven.Zeven x -> (x > 0)%Z -> P (Z.div2 x) -> P x) ->
  (forall x : Z, Zeven.Zodd x -> (x > 0)%Z -> P (x - 1)%Z -> P x) ->
  forall x : Z, (x >= 0)%Z -> P x.
 Proof.
@@ -251,9 +251,9 @@ auto.
 omega.
 
 apply H4.
-apply Zge_le; apply Zdiv2_positive; [ trivial | omega ].
+apply Z.ge_le; apply Zdiv2_positive; [ trivial | omega ].
 
-apply Zgt_lt; apply x_gt_Zdiv2; [ trivial | omega ].
+apply Z.gt_lt; apply x_gt_Zdiv2; [ trivial | omega ].
 
 apply H1.
 trivial.
@@ -311,7 +311,7 @@ Qed.
 
 Lemma legal_divide :
  forall (x : Z) (c : Config),
- (x > 0)%Z -> Zeven.Zeven x -> legal (Zeven.Zdiv2 x) c -> legal x c.
+ (x > 0)%Z -> Zeven.Zeven x -> legal (Z.div2 x) c -> legal x c.
 Proof.
 intros; apply legal_trans with (c := divide_trans (mkconfig x)).
 cut (co (mkconfig x) > 0)%Z.
